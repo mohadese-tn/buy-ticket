@@ -1,0 +1,93 @@
+html{
+    overflow-x: hidden;
+}
+body {
+    background-image: url(../image/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    margin-top: 100px;
+    padding: 60px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fnameInput,
+.lnameInput,
+.phoneInput,
+.emailInput,
+.countrySelect,
+.citySelect {
+    width: 450px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    padding: 0px 10px;
+    outline: none;
+    transition: 0.3s;
+}
+.countrySelect,
+.citySelect{
+    width: 470px;
+}
+.fnameInput:focus,
+.lnameInput:focus,
+.phoneInput:focus,
+.emailInput:focus,
+.countrySelect:focus,
+.citySelect:focus{
+    background-color:  rgb(97, 95, 95);
+    color: #fff !important;
+}
+
+.btn {
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+    padding: 0px 20px;
+    background-color: rgb(89, 142, 212);
+    margin-top:20px;
+    cursor: pointer;
+    font-weight: 500 !important;
+    border: none !important;
+    outline: none !important;
+    transition: 0.3s;
+}
+.btn:hover{
+    color: rgb(89, 142, 212);
+    background-color: rgb(75, 74, 74);
+
+}
+.box {
+    text-align: center;
+    padding: 15px 50px;
+    position: relative;
+}
+/* ----------for validation */
+.error{
+  background-color: rgb(243, 58, 58);
+  opacity: 0.8;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 5px;
+  
+}
+.error span{
+    padding: 2px 5px;
+}
+.hidden{
+  display:none;
+}
+#phone-error , #email-error{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 59px;
+    left: 170px;
+}
+
+
+
